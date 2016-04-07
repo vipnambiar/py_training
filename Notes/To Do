@@ -1,2 +1,28 @@
-To Do
------
+Exercises
+=========
+
+1. Define a function which takes a string as its argument.
+   It should print the characters of the string one at a time.
+   First solution should use a while loop and the second solution should implement a For loop
+   
+2. Enhance the above function with a second argument to the function.
+   Sample function definition:
+        
+        def displayChar( string, reverse=False):
+            .....
+            .....
+            
+   If reverse is True it should print the chars in reverse order.
+   
+3. Define a function which will accept a string as argument and return True
+   if the string is a palindrome. Palindrome is a word in English which when read backwards from the last letter 
+   to first spells the   same. example:- Madam, Radar, Solos etc
+   
+   Hint: Use string slicing using str[start:stop:step]
+    
+4. Create a dictionary with keys as strings and values as integers.
+   List the keys in alphabetical order.
+   List the values from lower to higher
+   
+5. Take a dictionary as input and create another dictionary by inverting the keys and values.
+   ie, the values becomes the key and the keys become the values.
