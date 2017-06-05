@@ -1,0 +1,4 @@
+This is to test write operation in file.
+We can write the whole content in one go using write method.
+We can pass a list of lines to writelines
+Need to pass in EOL char for each line
