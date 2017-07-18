@@ -26,3 +26,89 @@ Exercises
    
 5. Take a dictionary as input and create another dictionary by inverting the keys and values.
    ie, the values becomes the key and the keys become the values.
+
+
+6. Take an input from the user for a test score and return the grade as per below scale:
+- A: 90-100
+- B: 80-89
+- C: 70-79
+- D: 60-69
+- F: <60
+
+7. Complete the below script to implement a Queue using list in python. Fill up the code in the functions: enQ, deQ and viewQ
+
+#!/usr/bin/env python
+import sys
+​
+queue = []
+​
+def enQ():
+    'Add the item to the end of the queue'
+    item = raw_input('Enter an integer or string to add to the queue: ').strip()
+    pass
+​
+def deQ():
+    'Pop out an item from the beginning of the queue'
+    pass
+​
+def viewQ():
+    'Display the current contents in the queue'
+    pass
+​
+def exit():
+    print 'Exiting'
+​
+CMDS = {'e': enQ, 'd': deQ, 'v': viewQ, 'q': exit}
+​
+def main():
+    menu = """
+    (E)nqueue
+    (D)equeue
+    (V)iew
+    (Q)uit
+    
+    Enter choice: """
+    
+    while True:
+        while True:
+            try:
+               choice = raw_input(menu).strip()[0].lower()
+            except (EOFerror, KeyboardInterrupt, indexError):
+                choice = 'q'
+            
+            print '\nYou picked: [%s]' % choice
+            if choice not in CMDS:
+                print 'Invalid option, try again'
+            else:
+                break
+        CMDS[choice]()
+        if choice == 'q':
+            break
+​
+​
+if __name__ == '__main__':
+    main()
+
+	
+8. Write a program which will accept a number between 0-100 and output the english language equivalent of it. 
+   for example an input of 89 should give the output as eighty nine and so on.
+
+
+9. Write a program which accepts a date in MM/DD/YYYY format and calculates the difference between it and current date in days.
+
+10. Make an connection to an sqlite db.
+	- Create a table with the below structure:
+	Table Name: employee
+	columns: 
+		id    STRING
+		name  STRING
+		dob   DATETIME
+		dept  STRING
+		addr  STRING
+	- Insert the below records into it:
+	1 'Joe'   'Human Resources' 12\10\1976  'North Lane, Seattle'
+	2 'David' 'Manufacturing'   15\03\1978  '10, Downing street, London'
+	3 'Mary'  'Sales'           03\04\1982  'Capitol hill, Washington'
+
+	- Execute a query to fetch name and dept of employees born after 01/01/1977
+   
