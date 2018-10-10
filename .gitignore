@@ -65,7 +65,10 @@ target/
 *.sublime-workspace
 *.code-workspace
 *.json
+.idea/
+.vscode/
+cq-logs
 
 #Project specific stuff
 *.db
-
+To Do.txt

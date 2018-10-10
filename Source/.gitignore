@@ -63,6 +63,9 @@ target/
 # Sublime cruft
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 *.json
 .idea/
 .vscode/
+cq-logs
+To Do.txt
