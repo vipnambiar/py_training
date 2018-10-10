@@ -63,6 +63,7 @@ target/
 # Sublime cruft
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 *.json
 
 #Project specific stuff
