@@ -1,6 +1,7 @@
 ﻿import sys
 
-version = sys.version
+
+print __name__
 
 if __name__ == '__main__':
-    print version
+    print sys.version
