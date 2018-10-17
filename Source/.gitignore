@@ -68,4 +68,7 @@ target/
 .idea/
 .vscode/
 cq-logs
+
+#Project specific stuff
+*.db
 To Do.txt
