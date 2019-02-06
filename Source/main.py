@@ -1,6 +1,6 @@
 from pkg1 import module1 as md1
 from pkg2.module2 import hello
-# from pkg2 import module3
+from pkg2 import module3
 
 
 def bar():
